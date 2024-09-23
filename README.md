@@ -27,7 +27,7 @@ Not working on:
 * iPhone 4S (running iOS 10.3 (14E277))
 
 Other observations:
-* Doesn't seem to spawn notifications if Camera is open, notifications still appear if Keyboard is open.
+* Doesn't seem to spawn notifications if Camera is open, notifications still appear if Keyboard is open with this updated repo.
 
 ### Video Demo
 
@@ -46,27 +46,13 @@ This implementation makes the following changes:
 
 And it makes these random choices every time it runs (Updated code re-advertises with a 200ms delay).
 
-Given the 29 devices and the 3 advertisement types, there are a total of 87 unique possible advertisements (ignoring the random source MAC) possible, of which one is broadcast every second.
+Given the 29 devices and the 3 advertisement types, there are a total of 87 unique possible advertisements (ignoring the random source MAC) possible, of which one is broadcasted every 1/5 of a second.
 
 ## Usage
 
-Clone the repo, and easiest would be to use VS Code w/ PlatformIO to upload it to your ESP32.
+The easiest would be to use VS Code w/ PlatformIO then copy and paste 'main.cpp' to the 'main.cpp' file PlatformIO created, and build/upload your ESP32.
 
-This updated project has been tested on an ESP32-WROOM-32E.
-
-### Via Arduino-CLI
-
-#### Windows
-
-If you've setup the Arduino CLI, e.g. via https://wellys.com/posts/esp32_cli/ , then you can `cd` into the `src` folder, and run the following:
-
-```
-arduino-cli compile --fqbn esp32:esp32:esp32c6 EvilAppleJuice-ESP32-INO -v
-arduino-cli upload -p COM4 --fqbn esp32:esp32:esp32c6 EvilAppleJuice-ESP32-INO -v
-arduino-cli monitor -c baudrate=115200 -p COM4
-```
-
-Replace `COM4` with the port the ESP32 is on, and `esp32c6` with the appropriate board.
+If errors occur, ensure your .ini file is filled out correctly. This updated project has been tested on an ESP32-WROOM-32E. (DM on Discord for support.)
 
 ### Spamming a specific device
 
