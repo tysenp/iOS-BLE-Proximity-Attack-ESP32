@@ -50,7 +50,7 @@ Given the 29 devices and the 3 advertisement types, there are a total of 87 uniq
 
 ## Usage
 
-The easiest would be to use VS Code w/ PlatformIO then copy and paste 'main.cpp' to the 'main.cpp' file PlatformIO created, and build/upload your ESP32.
+The easiest would be to use VS Code w/ PlatformIO then copy and paste 'src/main.cpp' to the 'main.cpp' file that PlatformIO created, and build/upload your ESP32.
 
 If errors occur, ensure your .ini file is filled out correctly. This updated project has been tested on an ESP32-WROOM-32E. (DM on Discord for support.)
 
