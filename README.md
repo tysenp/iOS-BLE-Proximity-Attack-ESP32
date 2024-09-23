@@ -1,6 +1,6 @@
 # iOS BLE Proximity Attack via ESP32
 
-Spam proximity BLE advertisements on iPhones and iPads!
+Spam proximity BLE advertisements on iPhones and iPads w/ iOS 18 compatibility!
 
 |iPhone 15s (latest)|Older iPhones|
 |-------------------|-------------|
@@ -10,7 +10,7 @@ Updated orginial code from ckcr4lyf, which was based off of the work of [ronalds
 
 Also thanks to [simondankelmann](https://github.com/simondankelmann) for their discoveries in new advertising messages to pop-up new notifications in iOS devices [source](https://github.com/simondankelmann/Bluetooth-LE-Spam/blob/main/app/src/main/java/de/simon/dankelmann/bluetoothlespam/AdvertisementSetGenerators/ContinuityActionModalAdvertisementSetGenerator.kt)
 
-With the randomization optimizations it can render an iPhone almost useless with a single ESP32 (a new notification as soon as you close the old one).
+With the randomization optimizations it can render an iPhone almost useless with a single ESP32 (a new notification as soon as you close the old one, no longer causes device crash).
 
 Confirmed on:
 * iPhone 15 (running iOS 17.1.2)
